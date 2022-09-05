@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <title>Fitness Center</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="main-nav">
+        <div class="container">
+            <a href="#" class="navbar-brand ">
+                <span class="font-italic "> Zaibi</span>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div id="navbarNav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link ml-5">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link ml-5">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link ml-5">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link mx-5">Contact us</a>
+                    </li>
+                    <li>
+                        <!-- LOGIN MODAL TRIGGER -->
+                        <a class="nav-link pointer" data-toggle="modal" data-target="#myLoginForm">Login/Sign in </a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="modal" id="myLoginForm">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header container d-flex justify-content-center my-4">
+                    <h2>Login Form</h2>
+                </div>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#loginform"><button class="pointer border-0 text-capitalize text-bold text-white bg-info py-2 px-4">Login</button></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#signupform"><button class="pointer border-0 text-capitalize text-bold text-white bg-info py-2 px-4">Sign up</button></a>
+                    </li>
+                    <!-- sign in form -->
+                    <div class="login-form">
+                        <div class="modal-body mx-auto" id="loginform" style="width: 85%;">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="Email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="password"> Password</label>
+                                <input type="password" placeholder="Password" class="form-control">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" data-dismiss="modal">Login</button>
+                        </div>
+                    </div>
+                    <!-- sign up form -->
+                    <div class="sign-in">
+                        <div class="modal-body mx-auto" id="signupform" style="width: 85%;">
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" placeholder="Username" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="Email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="password"> Password</label>
+                                <input type="password" placeholder="Password" class="form-control">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" data-dismiss="modal">Sign up</button>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bg-colors">
+        <section class="container">
+            <div id="accordion">
+                <div class="card mt-5 bg-colors">
+                    <div class="card-header mt-5 pt-5">
+                        <h5>
+                            <a href="#collapse1" data-parent="#accordion" data-toggle="collapse">
+                            Where is the Gym?
+                  </a>
+                        </h5>
+                    </div>
+
+                    <div id="collapse1" class="collapse show">
+                        <div class="card-body">
+                            This gym is near by Pir Mehr Ali Shah Arid Agricluture Rawalpindi.This Gym is on the top floor of the Noor forces Academy. If you can't find our location by this address then please visit our offical website so you can easily find out our location whose
+                            location given on offical website.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-colors">
+                    <div class="card-header">
+                        <h5>
+                            <a href="#collapse2" data-parent="#accordion" data-toggle="collapse">
+                            What is timming of the timming of the Gym?
+                        </a>
+                        </h5>
+                    </div>
+
+                    <div id="collapse2" class="collapse  ">
+                        <div class="card-body">
+                            We open the early in the morning i.e"6:00am to 10:00am".After that we open that in evening i.e"4:00pm to 11:00pm". If you have and question in your mind then please contact from our official website.Then we explain about our Gym.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-colors">
+                    <div class="card-header">
+                        <h5>
+                            <a href="#collapse3" data-parent="#accordion" data-toggle="collapse">
+                   What is the benefits of the gym?
+                  </a>
+                        </h5>
+                    </div>
+
+                    <div id="collapse3" class="collapse  ">
+                        <div class="card-body">
+                            Regular physical activity can improve your muscle strength and boost your endurance. Exercise delivers oxygen and nutrients to your tissues and helps your cardiovascular system work more efficiently. And when your heart and lung health improve, you have
+                            more energy to tackle daily chores.
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-colors">
+                    <div class="card-header">
+                        <h5>
+                            <a href="#collapse4" data-parent="#accordion" data-toggle="collapse">
+                            What is the most important thing in gym?
+                  </a>
+                        </h5>
+                    </div>
+
+                    <div id="collapse4" class="collapse  ">
+                        <div class="card-body">
+                            Aerobic exercise, which speeds up your heart rate and breathing, is important for many body functions. It gives your heart and lungs a workout and increases endurance.
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-colors">
+                    <div class="card-header">
+                        <h5>
+                            <a href="#collapse5" data-parent="#accordion" data-toggle="collapse">
+                            Is gym good for mental health?
+                  </a>
+                        </h5>
+                    </div>
+
+                    <div id="collapse5" class="collapse  ">
+                        <div class="card-body">
+                            physical activity releases feel-good hormones that make you feel better in yourself and give you more energy. managing stress, anxiety or intrusive and racing thoughts – doing something physical releases cortisol which helps us manage stress.
+                        </div>
+                    </div>
+                </div>
+                <div class="card pb-5 bg-colors">
+                    <div class="card-header">
+                        <h5>
+                            <a href="#collapse6" data-parent="#accordion" data-toggle="collapse">
+                            Is there water available at the club?
+                  </a>
+                        </h5>
+                    </div>
+
+                    <div id="collapse6" class="collapse  ">
+                        <div class="card-body">
+                            Water is sold in the multiple vending machines at the club. There is no water fountains available, so please bring your own water if not purchasing some.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Map/ LOcation -->
+    <section class="map" id="contact">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.308894892724!2d73.07935481546284!3d33.64915724631067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df952e017d0acd%3A0xf20be4a76782ceaf!2sPir%20Mehr%20Ali%20Shah%20Arid%20Agriculture%20University%20-%20PMAS%20AAUR!5e0!3m2!1sen!2s!4v1661799568310!5m2!1sen!2s "
+            width="100% " height="240 " style="border:0;" allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
+
+    </section>
+    <footer class="cotainer bg-dark">
+        <div class="row">
+            <div class="col-3 text-center d-flex align-self-end">
+                <a href="#" class="text-light pl-5 pb-3">&copy;2022 Zaibi Gym </a>
+            </div>
+            <div class="col-3">
+                <h2 class="text-white text-center">Openning Hours</h2>
+                <ul class="list-unstyled text-white my-2 text-center">
+                    <li>Mon: <span>5:30-23:00</span></li>
+                    <li>Tue: <span>5:30-23:00</span></li>
+                    <li>Wed: <span>5:30-23:00</span></li>
+                    <li>Thur: <span>5:30-23:00</span></li>
+                    <li>Fri: <span>5:30-23:00</span></li>
+                    <li>Sat: <span>5:30-23:00</span></li>
+                    <li>Sun: <span>5:30-23:00</span></li>
+                </ul>
+            </div>
+            <div class="col-3 text-center d-flex flex-column pt-3">
+                <h2 class="text-white">Some other links</h2>
+                <ul class="list-unstyled d-flex justify-content-between flex-column mt-3">
+                    <li class="nav-item">
+                        <a href="./privacy.html" class="nav-link text-white" target="_blank">Privacy and Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./faq.html" class="nav-link text-white" target="_blank">FAQ's</a>
+                    </li class="nav-item">
+                    <li>
+                        <a href="" class="nav-link text-white">Careers</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3 mt-3">
+                <div class="d-flex flex-column text-center">
+                    <h2 class="text-white">Media Links</h2>
+                    <div class="mt-3 d-flex justify-content-between flex-column">
+                        <a href="#" class="my-2">
+                            <img src="./icons/instagram-1.svg" alt=" ">
+                        </a>
+                        <a href="#" class="my-2">
+                            <img src="./icons/youtube-symbol 1.svg" alt=" ">
+                        </a>
+                        <a href="#" class="my-2">
+                            <img src="./icons/twitter-1.svg" alt=" ">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous ">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous ">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js " integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T " crossorigin="anonymous ">
+    </script>
+    <script>
+        $('body').scrollspy({
+            target: '#main-nav'
+        });
+
+        // add smpth scrolling 
+        $('#main-nav a').on('click', function(e) {
+            // check for a hash value
+
+            if (this.hash !== '') {
+                //prevent default behavior
+                e.preventDefault();
+
+                //store hash
+                const hash = this.hash;
+
+                // animate smoth scroll
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function() {
+                    // Add hash to URL after scroll
+
+                    window.location.hash = hash;
+                });
+            }
+        });
+        $('.carousel').carousel({
+            interval: 7000,
+            keyboard: true,
+            pause: hover,
+            wrap: true
+        })
+    </script>
+</body>
+
+</html>
+</body>
+
+</html>

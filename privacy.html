@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <title>Fitness Center</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="main-nav">
+        <div class="container">
+            <a href="#" class="navbar-brand ">
+                <span class="font-italic "> Zaibi</span>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div id="navbarNav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link ml-5">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link ml-5">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link ml-5">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link mx-5">Contact us</a>
+                    </li>
+                    <li>
+                        <!-- LOGIN MODAL TRIGGER -->
+                        <a class="nav-link pointer" data-toggle="modal" data-target="#myLoginForm">Login/Sign in </a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="modal" id="myLoginForm">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header container d-flex justify-content-center my-4">
+                    <h2>Login Form</h2>
+                </div>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#loginform"><button class="pointer border-0 text-capitalize text-bold text-white bg-info py-2 px-4">Login</button></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#signupform"><button class="pointer border-0 text-capitalize text-bold text-white bg-info py-2 px-4">Sign up</button></a>
+                    </li>
+                    <!-- sign in form -->
+                    <div class="login-form">
+                        <div class="modal-body mx-auto" id="loginform" style="width: 85%;">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="Email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="password"> Password</label>
+                                <input type="password" placeholder="Password" class="form-control">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" data-dismiss="modal">Login</button>
+                        </div>
+                    </div>
+                    <!-- sign up form -->
+                    <div class="sign-in">
+                        <div class="modal-body mx-auto" id="signupform" style="width: 85%;">
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" placeholder="Username" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="Email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="password"> Password</label>
+                                <input type="password" placeholder="Password" class="form-control">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" data-dismiss="modal">Sign up</button>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- section about privacy and Policy -->
+    <div class="bg-colors">
+        <section class="container">
+            <div class="mt-5">
+                <h2 class="text-center py-5 text-danger">Privacy and Policy</h2>
+                <hr color="red">
+            </div>
+            <div class="pb-3">
+                <p>Goldstone Fitness Ltd will never knowingly pass on details transmitted through this website, by phone, email, post, fax or in person to unauthorised third parties. In addition to contact you may make with Goldstone Fitness Ltd., we would
+                    like you to note that we also record visitor activity on our website in the form of anonymous data collection which helps us to improve our website and identify potential problems. Under normal circumstances, it is impossible to track
+                    an IP address and other information collected to an individual or organisation unless criminal activity occurs on our website. In such a case, we must pass on details to third legal parties, policing organisations in Ireland or worldwide,
+                    or to compile our own legal claims. Within our privacy policy, we pledge to act within the Data Protection Acts (1988 onwards) under Irish law. Any breaches reported to us will be investigated appropriately and if necessary, we will
+                    contact relevant government and legal bodies. Please report all complaints and concerns in writing to E-mail: join@goldstonefitness.ie At Goldstone Gym & Fitness Ltd. we are always dedicated to protecting your rights of privacy, our
+                    privacy policy and implementation of our privacy policy meets the requirements of the Data Protection Act 1998 and includes information in relation to how we may contact you, and handle your information. If you have any queries about
+                    this statement please contact us at join@goldstonefitness.ie</p>
+            </div>
+            <div class="pb-4">
+                <h2 class="pb-4 text-bold text-black">When do we collect information?</h2>
+                <p>We will obtain personal information from you when you complete an online Membership Agreement, we may also collect non-identifiable information about how you browse our website, using traffic tracking software, we may also collect your
+                    details by emails sent to Goldstone Gym or email newsletter / sign up information forms or club viewing cards during club tours/visits.</p>
+            </div>
+            <div class="pb-4">
+                <h2 class="pb-4 text-bold text-black">What information do we collect?</h2>
+                <p>The types of information we collect includes name, date of birth, e-mail address, postal address, telephone number and your credit card details. Note that we do not store your credit card details on our web servers - this is securely stored
+                    with a third party, bank approved firm, whom we have contracted to collect payments in a passive manner.</p>
+            </div>
+            <div class="pb-4">
+                <h2 class="pb-4 text-bold text-black">How do we use this information?</h2>
+                <p>We will use your personal information to provide you with the services, products or information that you have requested and for administration purposes. We may need to share your information with our service providers, associated organisations
+                    and agents for these purposes.</p>
+            </div>
+        </section>
+    </div>
+
+
+
+    <footer class="cotainer bg-dark">
+        <div class="row">
+            <div class="col-3 text-center d-flex align-self-end">
+                <a href="#" class="text-light pl-5 pb-3">&copy;2022 Zaibi Gym </a>
+            </div>
+            <div class="col-3">
+                <h2 class="text-white text-center">Openning Hours</h2>
+                <ul class="list-unstyled text-white my-2 text-center">
+                    <li>Mon: <span>5:30-23:00</span></li>
+                    <li>Tue: <span>5:30-23:00</span></li>
+                    <li>Wed: <span>5:30-23:00</span></li>
+                    <li>Thur: <span>5:30-23:00</span></li>
+                    <li>Fri: <span>5:30-23:00</span></li>
+                    <li>Sat: <span>5:30-23:00</span></li>
+                    <li>Sun: <span>5:30-23:00</span></li>
+                </ul>
+            </div>
+            <div class="col-3 text-center d-flex flex-column pt-3">
+                <h2 class="text-white">Some other links</h2>
+                <ul class="list-unstyled d-flex justify-content-between flex-column mt-3">
+                    <li class="nav-item">
+                        <a href="./privacy.html" class="nav-link text-white" target="_blank">Privacy and Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./faq.html" class="nav-link text-white" target="_blank">FAQ's</a>
+                    </li class="nav-item">
+                    <li>
+                        <a href="" class="nav-link text-white">Careers</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3 mt-3">
+                <div class="d-flex flex-column text-center">
+                    <h2 class="text-white">Media Links</h2>
+                    <div class="mt-3 d-flex justify-content-between flex-column">
+                        <a href="#" class="my-2">
+                            <img src="./icons/instagram-1.svg" alt=" ">
+                        </a>
+                        <a href="#" class="my-2">
+                            <img src="./icons/youtube-symbol 1.svg" alt=" ">
+                        </a>
+                        <a href="#" class="my-2">
+                            <img src="./icons/twitter-1.svg" alt=" ">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous ">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous ">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js " integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T " crossorigin="anonymous ">
+    </script>
+    <script>
+        $('body').scrollspy({
+            target: '#main-nav'
+        });
+
+        // add smpth scrolling 
+        $('#main-nav a').on('click', function(e) {
+            // check for a hash value
+
+            if (this.hash !== '') {
+                //prevent default behavior
+                e.preventDefault();
+
+                //store hash
+                const hash = this.hash;
+
+                // animate smoth scroll
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function() {
+                    // Add hash to URL after scroll
+
+                    window.location.hash = hash;
+                });
+            }
+        });
+        $('.carousel').carousel({
+            interval: 7000,
+            keyboard: true,
+            pause: hover,
+            wrap: true
+        })
+    </script>
+</body>
+
+</html>
+</body>
+
+</html>

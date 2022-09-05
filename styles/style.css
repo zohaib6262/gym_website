@@ -1,0 +1,43 @@
+.bg-colors {
+  background-color: rgb(182, 176, 176);
+}
+
+.navtabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.tradmill {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 90vh;
+}
+
+.chest {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 90vh;
+}
+
+.shoulder {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 90vh;
+}
+
+.form {
+  width: 40%;
+  margin: auto;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(179, 60, 100);
+  border: none;
+}/*# sourceMappingURL=style.css.map */

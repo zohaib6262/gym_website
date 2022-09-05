@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <title>Fitness Center</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="main-nav">
+        <div class="container">
+            <a href="#" class="navbar-brand ">
+                <span class="font-italic "> Zaibi</span>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div id="navbarNav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link ml-5">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link ml-5">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link ml-5">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link mx-5">Contact us</a>
+                    </li>
+                    <li>
+                        <!-- LOGIN MODAL TRIGGER -->
+                        <a class="nav-link pointer" data-toggle="modal" data-target="#myLoginForm">Login/Sign in </a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="modal" id="myLoginForm">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header container d-flex justify-content-center my-4">
+                    <h2>Login Form</h2>
+                </div>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#loginform"><button class="pointer border-0 text-capitalize text-bold text-white bg-info py-2 px-4">Login</button></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#signupform"><button class="pointer border-0 text-capitalize text-bold text-white bg-info py-2 px-4">Sign up</button></a>
+                    </li>
+                    <!-- sign in form -->
+                    <div class="login-form">
+                        <div class="modal-body mx-auto" id="loginform" style="width: 85%;">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="Email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="password"> Password</label>
+                                <input type="password" placeholder="Password" class="form-control">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" data-dismiss="modal">Login</button>
+                        </div>
+                    </div>
+                    <!-- sign up form -->
+                    <div class="sign-in">
+                        <div class="modal-body mx-auto" id="signupform" style="width: 85%;">
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" placeholder="Username" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="Email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="password"> Password</label>
+                                <input type="password" placeholder="Password" class="form-control">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" data-dismiss="modal">Sign up</button>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- section show case area -->
+    <section id="home" class="container">
+        <div class="d-block">
+            <div class="d-block">
+                <div id="slider4" class="carousel slide" data-ride="carousel">
+
+                    <ol class="carousel-indicators">
+                        <li class="active" data-target="#slider4" data-slide-to="0"></li>
+                        <li data-target="#slider4" data-slide-to="1"></li>
+                        <li data-target="#slider4" data-slide-to="2"></li>
+                        <li data-target="#slider4" data-slide-to="3"></li>
+
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="https://images.pexels.com/photos/4046704/pexels-photo-4046704.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="First Slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Rope Exercise</h3>
+                                <p>It is a great functional way to train your back and core.As you pull the rope, it just keeps coming, and it requires strength and cardiovascular endurance to keep at it. "It works your back and biceps, but if done at the
+                                    right intensity, it's also a good cardio workout.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <img class="d-block img-fluid" src="https://images.pexels.com/photos/4720238/pexels-photo-4720238.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Second Slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Slide Two</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, omnis.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <img class="d-block img-fluid" src="https://images.pexels.com/photos/5327556/pexels-photo-5327556.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Third Slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Chest Exercise</h3>
+                                <p>It Is No Doubt That Your Shoulder And Collar Bones Are One Of The Most-Strongest Of The Musculoskeletal System. From Holding Your Spine And Head In Palace To Supporting Your Ribs And Arms, The Shoulders Are Indeed Heavy
+                                    Workers. Regular Shoulder Exercises Also Work On Building Stronger Bones And Reduces Injury. Strong Bones Also Protect Against The Risk Of Osteoporosis. Osteoporosis Is A Disease Which Causes Thinning And Weakening
+                                    Of Bones. Weak Bones Are Highly Susceptible To Fractures And Injury. So, If You Want To Make Your Bones Stronger Than Ever, Go Hit The Gym Right Now.</p>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.pexels.com/photos/3839506/pexels-photo-3839506.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="" class="d-block img-fluid">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Shoulder Exercise</h3>
+                                <p>This upper body strength and power help with daily activities such as pushing strollers, shopping carts, and heavy doors. It’s also beneficial for sports such as swimming, tennis, and baseball. Other benefits of strength
+                                    training include enhanced fitness level, stronger bones, and better mental health. You’ll gain muscle and lose fat, helping to burn more calories even while at rest. These benefits may help you to look and feel better,
+                                    which can increase your confidence and well-being.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#slider4" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon d-none d-sm-block"></span>
+                </a>
+                <a href="#slider4" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon d-none d-sm-block"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- About us -->
+    <section id="about" class="bg-colors">
+        <div class="container">
+            <div class="text-dark text-center pt-5 pb-3 mb-xl-5 font-weight-normal">
+                <h2>About Gym</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-weight-normal text-dark mb-5 mt-3 text-justify mx-4">
+                        <p>Gym 24 provides a 24/7 Fitness facility to residents of Martinsville and Henry County, as well as surrounding areas to help people reach and maintain their goals. We combine different types of fitness equipment to meet different
+                            fitness needs and levels.</p>
+                    </div>
+                    <div class="text-wight-normal text-dark mb-5 mt-3 text-justify mx-4">
+                        <p> At Gym 24 you'll find all the latest strength and cardio equipment along with a energetic group exercise program that includes POUND, Zumba, Kickboxing, Bootcamp, Muscle Building and many other cardio classes. You'll find a supportive
+                            environment with all kinds of people who are working just as hard as you to meet their goals.</p>
+                    </div>
+                    <div class="text-weight-normal text-dark mb-5 mt-3 text-justify mx-4 pb-5">
+                        <p>
+                            Our Staff, Trainers & Group exercise instructors are committed to offering our members a great fitness experience. Whether you’re a mom looking to get back into shape, a marathon runner trying to shave a few minutes off your personal best or just trying
+                            to stay healthy we would love to help you realize your potential and meet your goals!!
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="mx-3 mt-3 mb-5">
+                        <img src="./imgs/GYM-5.webp" alt="" height="500" width="100%">
+                    </div>
+                </div> <br>
+                <br>
+                <div class="container">
+                    <div class="d-flex flex-nowrap justify-content-center">
+                        <a href="./aboutpage/about.html"><button class="btn btn-dark mb-xl-5 mx-auto">About More</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services  -->
+    <section id="services" class="bg-colors">
+        <div class="py-5">
+            <div class="container ">
+                <div class="text-center pt-5 pb-3 mb-5 font-weight-normal ">
+                    <h2>Services</h2>
+                </div>
+                <div class="row ">
+                    <div class="col">
+                        <div>
+                            <img src="./imgs/GYM-6.jpeg" alt=" " class="card-image-top " width="100% " height="250px ">
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="title text-center mb-3">
+                                    <h4>Running EXERCISE</h4>
+                                </div>
+                                <div class="sub-title muted text-center">Running machine</div>
+                                <div class="card-text mb-2">
+                                    This tradmill machine is.... <a href="./tradmill.html" class=" mt-2 align-cenrer btn btn-dark btn-block">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="col ">
+                        <img src="./imgs/GYM-7.jpeg" alt=" " class="card-image-top " width="100% " height="250px ">
+                        <div class="card ">
+                            <div class="card-body">
+                                <div class="title text-center mb-3">
+                                    <h4>Chest EXERCISE</h4>
+                                </div>
+                                <div class="sub-title muted text-center">Chest machine</div>
+                                <div class="card-text mb-2">
+                                    This machine is good for.... <a href="./chest.html " class=" mt-2 align-cenrer btn btn-dark btn-block ">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            <img src="./imgs/GYM-8.jpeg " alt=" " width="100% " class="card-image-top " height="250px ">
+                        </div>
+                        <div class="card ">
+                            <div class="card-body">
+                                <div class="title text-center mb-3">
+                                    <h4>Shoulder Exercise</h4>
+                                </div>
+                                <div class="sub-title muted text-center">Shoulder Exercise</div>
+                                <div class="card-text mb-2">
+                                    This exercise is good for.... <a href="./shoulder.html" class=" mt-2 align-cenrer btn btn-dark btn-block">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services End -->
+    <!-- Contact us -->
+    <section id="contact" class="bg-colors pb-3">
+        <div class="container ">
+            <h2 class="text-center pt-5 font-weight-bold ">Contact us</h2>
+            <div class="pb-5">
+                <div class="container ">
+                    <form class="form ">
+                        <div class="form-group my-3 pt-5 pb-3 text-dark ">
+                            <label for="firstname ">First Name</label>
+                            <input type="text " class="form-control " placeholder="First Name ">
+                        </div>
+                        <div class="form-group my-3 py-2 text-dark ">
+                            <label for="lirstname ">Last Name</label>
+                            <input type="text " class="form-control " id="lastname " placeholder="Last Name ">
+                        </div>
+                        <div class="form-group my-3 py-2 text-dark ">
+                            <label for="email ">Email</label>
+                            <input type="text " class="form-control " id="email " placeholder="Enter your E-mail ">
+                        </div>
+                        <button class="btn btn-dark float-right mb-4 " type="submit ">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // End about section -->
+    </div>
+
+
+    <!-- Map/ LOcation -->
+
+    <section class="map" id="contact">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.308894892724!2d73.07935481546284!3d33.64915724631067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df952e017d0acd%3A0xf20be4a76782ceaf!2sPir%20Mehr%20Ali%20Shah%20Arid%20Agriculture%20University%20-%20PMAS%20AAUR!5e0!3m2!1sen!2s!4v1661799568310!5m2!1sen!2s "
+            width="100% " height="280 " style="border:0;" allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
+
+    </section>
+    <footer class="cotainer bg-dark">
+        <div class="row">
+            <div class="col-xl-2 col-lg-2 text-center d-flex align-self-center justify-content-center text-bold">
+                <a href="#" class="text-light text-center">&copy;2022 Zaibi Gym </a>
+            </div>
+            <div class="col-xl-4 col-lg-4">
+                <h2 class="text-white text-center">Openning Hours</h2>
+                <ul class="list-unstyled text-white my-2 text-center">
+                    <li>Mon: <span class="ml-2">  5:30-23:00</span></li>
+                    <li>Tue: <span class="ml-3">  5:30-23:00</span></li>
+                    <li>Wed: <span class="ml-2">  5:30-23:00</span></li>
+                    <li>Thu: <span class="ml-3"> 5:30-23:00</span></li>
+                    <li>Fri: <span class="ml-3">  5:30-21:00</span></li>
+                    <li>Sat: <span class="ml-3">  8:00-19:00</span></li>
+                    <li>Sun: <span class="ml-2">  9:00-18:00</span></li>
+                </ul>
+            </div>
+            <div class="col-xl-3 col-lg-3 text-center d-flex flex-column pt-3">
+                <h2 class="text-white">Some other links</h2>
+                <ul class="list-unstyled d-flex justify-content-between flex-column mt-3">
+                    <li class="nav-item">
+                        <a href="./privacy.html" class="nav-link text-white" target="_blank">Privacy and Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./faq.html" class="nav-link text-white" target="_blank">FAQ's</a>
+                    </li class="nav-item">
+                    <li>
+                        <a href="" class="nav-link text-white">Careers</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xl-3 col-lg-3 mt-3">
+                <div class="d-flex flex-column text-center">
+                    <h2 class="text-white">Media Links</h2>
+                    <div class="mt-3 d-flex justify-content-between flex-column">
+                        <a href="#" class="my-2">
+                            <img src="./icons/instagram-1.svg" alt=" ">
+                        </a>
+                        <a href="#" class="my-2">
+                            <img src="./icons/youtube-symbol 1.svg" alt=" ">
+                        </a>
+                        <a href="#" class="my-2">
+                            <img src="./icons/twitter-1.svg" alt=" ">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous ">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous ">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js " integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T " crossorigin="anonymous ">
+    </script>
+    <script>
+        $('body').scrollspy({
+            target: '#main-nav'
+        });
+
+        // add smpth scrolling 
+        $('#main-nav a').on('click', function(e) {
+            // check for a hash value
+
+            if (this.hash !== '') {
+                //prevent default behavior
+                e.preventDefault();
+
+                //store hash
+                const hash = this.hash;
+
+                // animate smoth scroll
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function() {
+                    // Add hash to URL after scroll
+
+                    window.location.hash = hash;
+                });
+            }
+        });
+        $('.carousel').carousel({
+            interval: 7000,
+            keyboard: true,
+            pause: hover,
+            wrap: true
+        })
+    </script>
+</body>
+
+</html>
+</body>
+
+</html>

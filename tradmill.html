@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand ">
+                <span class="font-italic "> Zaibi</span>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div id="navbarNav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link ml-5 ">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link ml-5 active">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link ml-5 ">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link ml-5 ">Contact us</a>
+                    </li>
+                    <li>
+                        <!-- LOGIN MODAL TRIGGER -->
+                        <button class="btn btn-outline-light" data-toggle="modal" data-target="#myLoginForm">Login/Sign in </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- MODAL -->
+    <div class="modal" id="myLoginForm">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login/Sign in</h5>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="username"> Username</label>
+                        <input type="text" placeholder="Username" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="password"> Password</label>
+                        <input type="password" placeholder="Password" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="container">
+        <h2 class="mt-xl-5 pt-xl-5 text-center text-bold">Tradmill Machine</h2>
+        <img src="./imgs/GYM-6.jpeg" alt="" class="my-xl-5 tradmill">
+        <div>
+            <h3 class="text-bold text-dark mb-5">ADVANTAGES:-</h3>
+            <ul type="circle">
+                <li class="mb-4">The treadmill is a relatively easy piece of exercise equipment to use</li>
+                <li class="mb-4">The treadmill has a predictable surface that is much easier to negotiate than sidewalks, curbs or trails and the risk of tripping is reduced</li>
+                <li class="mb-4">All aspects of the workout can be controlled by the user: speed, incline, warm up period, cool down period, and energy spend</li>
+                <li class="mb-4">Generally, users can design custom programs to fit the time they have to exercise</li>
+                <li class="mb-4">Multiple users can use the same equipment without adjusting the structure</li>
+                <li class="mb-4">Some treadmills have special features such as step counters and heart rate monitors so fitness progress can be tracked</li>
+                <li class="mb-xl-5">Running on a treadmill generally burns calories faster than most other forms of in-home exercise, such as biking</li>
+            </ul>
+        </div>
+
+    </section>
+    <footer class="cotainer bg-dark">
+        <div class="row">
+            <div class="col-3 text-center d-flex align-self-end">
+                <a href="#" class="text-light pl-5 pb-3">&copy;2022 Zaibi Gym </a>
+            </div>
+            <div class="col-3">
+                <h2 class="text-white text-center">Openning Hours</h2>
+                <ul class="list-unstyled text-white my-2 text-center">
+                    <li>Mon: <span>5:30-23:00</span></li>
+                    <li>Tue: <span>5:30-23:00</span></li>
+                    <li>Wed: <span>5:30-23:00</span></li>
+                    <li>Thur: <span>5:30-23:00</span></li>
+                    <li>Fri: <span>5:30-23:00</span></li>
+                    <li>Sat: <span>5:30-23:00</span></li>
+                    <li>Sun: <span>5:30-23:00</span></li>
+                </ul>
+            </div>
+            <div class="col-3 text-center d-flex flex-column pt-3">
+                <h2 class="text-white">Some other links</h2>
+                <ul class="list-unstyled d-flex justify-content-between flex-column mt-3">
+                    <li class="nav-item">
+                        <a href="./privacy.html" class="nav-link text-white" target="_blank">Privacy and Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./faq.html" class="nav-link text-white" target="_blank">FAQ's</a>
+                    </li class="nav-item">
+                    <li>
+                        <a href="" class="nav-link text-white">Careers</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3 mt-3">
+                <div class="d-flex flex-column text-center">
+                    <h2 class="text-white">Media Links</h2>
+                    <div class="mt-3 d-flex justify-content-between flex-column">
+                        <a href="#" class="my-2">
+                            <img src="./icons/instagram-1.svg" alt=" ">
+                        </a>
+                        <a href="#" class="my-2">
+                            <img src="./icons/youtube-symbol 1.svg" alt=" ">
+                        </a>
+                        <a href="#" class="my-2">
+                            <img src="./icons/twitter-1.svg" alt=" ">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous ">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous ">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js " integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T " crossorigin="anonymous ">
+    </script>
+    <script>
+        $('body').scrollspy({
+            target: '#main-nav'
+        });
+
+        // add smpth scrolling 
+        $('#main-nav a').on('click', function(e) {
+            // check for a hash value
+
+            if (this.hash !== '') {
+                //prevent default behavior
+                e.preventDefault();
+
+                //store hash
+                const hash = this.hash;
+
+                // animate smoth scroll
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function() {
+                    // Add hash to URL after scroll
+
+                    window.location.hash = hash;
+                });
+            }
+        });
+        $('.carousel').carousel({
+            interval: 7000,
+            keyboard: true,
+            pause: hover,
+            wrap: true
+        })
+    </script>
+</body>
+
+</html>
+</body>
+
+</html>

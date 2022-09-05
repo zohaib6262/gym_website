@@ -1,0 +1,18 @@
+@import'./global';
+@import'./header';
+@import'./tradmill';
+@import'./chest';
+@import'./shoulder';
+.form {
+    width: 40%;
+    margin: auto;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(179, 60, 100);
+    border: none;
+}
