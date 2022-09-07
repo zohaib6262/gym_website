@@ -46,56 +46,99 @@
     <div class="modal" id="myLoginForm">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header container d-flex justify-content-center my-4">
-                    <h2>Login Form</h2>
+                <div class="modal-header">
+                    <ul class="nav nav-pills mb-6" id="pills-tab" role="tablist">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Login</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Sign up</a>
+                        </li>
+
+
+                    </ul>
+
+
+                    <button class="close" data-dismiss="modal">&times;</button>
                 </div>
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="modal" data-target="#loginform"><button class="pointer border-0 text-capitalize text-bold text-white bg-info py-2 px-4">Login</button></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="modal" data-target="#signupform"><button class="pointer border-0 text-capitalize text-bold text-white bg-info py-2 px-4">Sign up</button></a>
-                    </li>
-                    <!-- sign in form -->
-                    <div class="login-form">
-                        <div class="modal-body mx-auto" id="loginform" style="width: 85%;">
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" placeholder="Email" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="password"> Password</label>
-                                <input type="password" placeholder="Password" class="form-control">
-                            </div>
+                <div class="modal-body">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <form class="form-modal">
+                                <div>
+                                    <label for="username">Username</label>
+                                    <input type="text" class="form-control" id="username" placeholder="Username" required>
+                                </div>
+                                <div>
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-secondary" data-dismiss="modal">Login</button>
+                                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </form>
                         </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-primary" data-dismiss="modal">Login</button>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <form class="form-modal">
+                                <div>
+                                    <label for="username">Username</label>
+                                    <input type="text" class="form-control" id="username" placeholder="Username" required>
+                                </div>
+                                <div>
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                </div>
+                                <div>
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" id="password" required>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-secondary" data-dismiss="modal">Sign up</button>
+                                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </form>
+
                         </div>
+
                     </div>
-                    <!-- sign up form -->
-                    <div class="sign-in">
-                        <div class="modal-body mx-auto" id="signupform" style="width: 85%;">
-                            <div class="form-group">
-                                <label for="username">Username</label>
-                                <input type="text" placeholder="Username" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" placeholder="Email" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="password"> Password</label>
-                                <input type="password" placeholder="Password" class="form-control">
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-primary" data-dismiss="modal">Sign up</button>
-                        </div>
-                    </div>
-                </ul>
+                </div>
+
+
             </div>
         </div>
     </div>
+
+
+    <!-- <form>
+                                <div>
+                                    <label for="username">Username</label>
+                                    <input type="text" class="form-control" id="username" placeholder="Username" required>
+                                </div>
+                                <div>
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                </div>
+                            </form> -->
+
+    <!-- <form>
+                                <div>
+                                    <label for="username">Username</label>
+                                    <input type="text" class="form-control" id="username" placeholder="username" required>
+                                </div>
+                                <div>
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                </div>
+                                <div>
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" id="password" required>
+                                </div>
+                            </form> -->
+
+
 
 
 
@@ -299,25 +342,10 @@
 
     </section>
     <footer class="bg-dark">
-        <div class="row">
-            <div class="col-xl-2 col-lg-2 text-center d-flex align-self-center justify-content-center text-bold">
-                <a href="#" class="text-light text-center">&copy;2022 Zaibi Gym </a>
-            </div>
-            <div class="col-xl-4 col-lg-4">
-                <h2 class="text-white text-center">Openning Hours</h2>
-                <ul class="list-unstyled text-white my-2 text-center">
-                    <li>Mon: <span class="ml-2">  5:30-23:00</span></li>
-                    <li>Tue: <span class="ml-3">  5:30-23:00</span></li>
-                    <li>Wed: <span class="ml-2">  5:30-23:00</span></li>
-                    <li>Thu: <span class="ml-3"> 5:30-23:00</span></li>
-                    <li>Fri: <span class="ml-3">  5:30-21:00</span></li>
-                    <li>Sat: <span class="ml-3">  8:00-19:00</span></li>
-                    <li>Sun: <span class="ml-2">  9:00-18:00</span></li>
-                </ul>
-            </div>
-            <div class="col-xl-3 col-lg-3 text-center d-flex flex-column pt-3">
-                <h2 class="text-white">Some other links</h2>
-                <ul class="list-unstyled d-flex justify-content-between flex-column mt-3">
+        <div class="row container">
+            <div class="col text-center d-flex flex-column mt-3">
+                <h4 class="text-white mt-xl-4">Useful links</h4>
+                <ul class="list-unstyled d-flex flex-column align-items-center mt-3">
                     <li class="nav-item">
                         <a href="./privacy.html" class="nav-link text-white" target="_blank">Privacy and Policy</a>
                     </li>
@@ -329,22 +357,25 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-xl-3 col-lg-3 mt-3">
-                <div class="d-flex flex-column text-center">
-                    <h2 class="text-white">Media Links</h2>
-                    <div class="mt-3 d-flex justify-content-between flex-column">
-                        <a href="#" class="my-2">
+            <div class="col mt-3">
+                <div class="d-flex flex-column text-center align-items-center mt-xl-4">
+                    <h4 class="text-white">Media Links</h4>
+                    <div class="mt-3 d-flex justify-content-center flex-row">
+                        <a href="#" class="my-4 mx-4">
                             <img src="./icons/instagram-1.svg" alt=" ">
                         </a>
-                        <a href="#" class="my-2">
+                        <a href="#" class="my-4 mx-4">
                             <img src="./icons/youtube-symbol 1.svg" alt=" ">
                         </a>
-                        <a href="#" class="my-2">
+                        <a href="#" class="my-4 mx-4">
                             <img src="./icons/twitter-1.svg" alt=" ">
                         </a>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="text-center">
+            <a href="#" class="text-light text-center">&copy;2022 Zaibi Gym </a>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous ">
