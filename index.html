@@ -5,48 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <title>Fitness Center</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="main-nav">
-        <div class="container">
-            <a href="#" class="navbar-brand ">
-                <span class="font-italic "> Zaibi</span>
-            </a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+    <nav class="navbar navbar-expand-md navbar-dark bg-info fixed-top" id="main-nav">
+
+        <a href="#" class="navbar-brand ">
+            <span class="font-italic ml-3">Zaibi</span>
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-            <div id="navbarNav" class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link ml-5">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link ml-5">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#services" class="nav-link ml-5">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link mx-5">Contact us</a>
-                    </li>
-                    <li>
-                        <!-- LOGIN MODAL TRIGGER -->
-                        <a class="nav-link pointer" data-toggle="modal" data-target="#myLoginForm">Login/Sign in </a>
-
-                    </li>
-                </ul>
-            </div>
+        <div id="navbarNav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#home" aria-current="page" class="nav-link ml-3">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link ml-3">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link ml-3">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#directors" class="nav-link ml-3">Directors</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link mx-3">Contact us</a>
+                </li>
+                <li class="nav-item">
+                    <!-- LOGIN MODAL TRIGGER -->
+                    <a class="nav-link pointer mr-2" data-toggle="modal" data-target="#myLoginForm">Sign In/Sign Up </a>
+                </li>
+            </ul>
         </div>
+
     </nav>
     <div class="modal" id="myLoginForm">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
+                    <h3 class="ml-3">Sign in /<span class="text-primary"> Sign up</span></h3>
+
+                    <button class="close" data-dismiss="modal">&times;</button>
+
+                </div>
+                <div class="mx-auto my-3">
                     <ul class="nav nav-pills mb-6 mx-auto" id="pills-tab" role="tablist">
 
                         <li class="nav-item">
@@ -56,12 +65,8 @@
                         <li class="nav-item">
                             <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Sign up</a>
                         </li>
-
-
                     </ul>
 
-
-                    <button class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
                     <div class="tab-content" id="pills-tabContent">
@@ -69,50 +74,50 @@
                             <form class="form-modal">
                                 <div>
                                     <label for="username">Username</label>
-                                    <input type="text" class="form-control" id="username" placeholder="Username" required>
+                                    <input type="text" class="form-control mb-3 usernameLogin" id="username" placeholder="Username" required>
                                 </div>
                                 <div>
                                     <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                    <input type="email" class="form-control mb-3 emailLogin" id="email" placeholder="Email" required>
                                 </div>
-                                <div class="modal-footer">
-                                    <button class="btn btn-secondary" data-dismiss="modal">Login</button>
-                                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <div class="float-right mt-3">
+                                    <button class="btn btn-primary btnLogin" data-dismiss="modal">Login</button>
+                                    <button class="btn btn-secondary mr-2 btnCloseLogin" data-dismiss="modal">Close</button>
+
                                 </div>
                             </form>
                         </div>
+
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                             <form class="form-modal">
                                 <div>
                                     <label for="username">Username</label>
-                                    <input type="text" class="form-control" id="username" placeholder="Username" required>
+                                    <input type="text" class="form-control mb-3 usernameSignup" id="username" placeholder="Username" required>
                                 </div>
                                 <div>
                                     <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                    <input type="email" class="form-control mb-3 emailSignup" id="email" placeholder="Email" required>
                                 </div>
                                 <div>
                                     <label for="password">Password</label>
-                                    <input type="password" class="form-control" id="password" required>
+                                    <input type="password" class="form-control mb-3 passwordSignup" id="password" placeholder="XXXXXXXX" required>
                                 </div>
-                                <div class="modal-footer">
-                                    <button class="btn btn-secondary" data-dismiss="modal">Sign up</button>
-                                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <div class="float-right mt-3">
+                                    <button class="btn btn-primary btnSignup" data-dismiss="modal">Sign Up</button>
+                                    <button class="btn btn-secondary mr-2 btnCloseSignup" data-dismiss="modal">Close</button>
+
                                 </div>
                             </form>
-
                         </div>
 
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
 
     <!-- section show case area -->
-    <section id="home" class="container">
+    <section id="home">
         <div class="d-block">
             <div class="d-block">
                 <div id="slider4" class="carousel slide" data-ride="carousel">
@@ -172,10 +177,10 @@
         </div>
     </section>
     <!-- About us -->
-    <section id="about" class="bg-colors">
+    <section id="about">
         <div class="container">
             <div class="text-dark text-center pt-5 pb-3 mb-xl-5 font-weight-normal">
-                <h2>About Gym</h2>
+                <h2>About <span class="text-info">Gym</span></h2>
             </div>
             <div class="row">
                 <div class="col-md-6">
@@ -203,7 +208,7 @@
                 <br>
                 <div class="container">
                     <div class="d-flex flex-nowrap justify-content-center">
-                        <a href="./aboutpage/about.html"><button class="btn btn-dark mb-xl-5 mx-auto">About More</button></a>
+                        <a href="./aboutpage/about.html"><button class="btn btn-info mb-xl-5 mx-auto">About More</button></a>
                     </div>
                 </div>
             </div>
@@ -211,56 +216,56 @@
     </section>
 
     <!-- Services  -->
-    <section id="services" class="bg-colors">
-        <div class="py-5">
-            <div class="container ">
-                <div class="text-center pt-5 pb-3 mb-5 font-weight-normal ">
-                    <h2>Services</h2>
+    <section id="services">
+        <div class="py-5 my-3">
+            <div class="container">
+                <div class="text-center pt-5 pb-3 mb-5">
+                    <h2 class="font-weight-bold"><span class="text-info">Serv</span>ices</h2>
                 </div>
-                <div class="row ">
-                    <div class="col">
+                <div class="row">
+                    <div class="col my-3">
                         <div>
                             <img src="./imgs/GYM-6.jpeg" alt=" " class="card-image-top " width="100% " height="250px ">
                         </div>
                         <div class="card">
-                            <div class="card-body">
+                            <div class="card-body bg-info text-light">
                                 <div class="title text-center mb-3">
                                     <h4>Running EXERCISE</h4>
                                 </div>
                                 <div class="sub-title muted text-center">Running machine</div>
                                 <div class="card-text mb-2">
-                                    This tradmill machine is.... <a href="./tradmill.html" class=" mt-2 align-cenrer btn btn-dark btn-block">Read More</a>
+                                    This tradmill machine is.... <a href="./tradmill.html" class=" mt-2 align-cenrer btn btn-outline-light btn-block">Read More</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <br><br>
-                    <div class="col ">
+                    <div class="col my-3">
                         <img src="./imgs/GYM-7.jpeg" alt=" " class="card-image-top " width="100% " height="250px ">
                         <div class="card ">
-                            <div class="card-body">
+                            <div class="card-body bg-info text-light">
                                 <div class="title text-center mb-3">
                                     <h4>Chest EXERCISE</h4>
                                 </div>
                                 <div class="sub-title muted text-center">Chest machine</div>
                                 <div class="card-text mb-2">
-                                    This machine is good for.... <a href="./chest.html " class=" mt-2 align-cenrer btn btn-dark btn-block ">Read More</a>
+                                    This machine is good for.... <a href="./chest.html " class=" mt-2 align-cenrer btn btn-outline-light btn-block ">Read More</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col my-3">
                         <div>
                             <img src="./imgs/GYM-8.jpeg " alt=" " width="100% " class="card-image-top " height="250px ">
                         </div>
                         <div class="card ">
-                            <div class="card-body">
+                            <div class="card-body bg-info text-light">
                                 <div class="title text-center mb-3">
                                     <h4>Shoulder Exercise</h4>
                                 </div>
                                 <div class="sub-title muted text-center">Shoulder Exercise</div>
                                 <div class="card-text mb-2">
-                                    This exercise is good for.... <a href="./shoulder.html" class=" mt-2 align-cenrer btn btn-dark btn-block">Read More</a>
+                                    This exercise is good for.... <a href="./shoulder.html" class=" mt-2 align-cenrer btn btn-outline-light btn-block">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -270,10 +275,173 @@
         </div>
     </section>
     <!-- services End -->
+
+
+
+    <!-- Directors page start -->
+    <section id="directors">
+        <div>
+            <h2 class="text-center font-weight-bold py-5"><span class="text-danger">Direc</span>tors</h2>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card mx-5 my-3">
+                    <div class="card-body text-color bg-color">
+                        <img src="./imgs/director_1.jpg" class="rounded-circle" alt="">
+                        <div class="title text-center my-4">
+                            <h4>Joe Richardson</h4>
+                        </div>
+                        <div class="card-text mb-2 text-justify">
+                            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, consequuntur aut commodi delectus tenetur perspiciatis dolor quod doloremque debitis. Maxime! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum,
+                                fuga.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="col">
+                <div class="card mx-5 my-3">
+                    <div class="card-body text-color bg-color">
+                        <img src="./imgs/director_2.jpg" class="rounded-circle" alt="">
+                        <div class="title text-center my-4">
+                            <h4>Mark King's</h4>
+                        </div>
+                        <div class="card-text mb-2 text-justify">
+                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit assumenda repellendus unde est aspernatur quae animi quas explicabo! Rem, totam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, fuga.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mx-5 my-3">
+                    <div class="card-body text-color bg-color">
+                        <img src="./imgs/director_3.jpg" class="rounded-circle" alt="">
+                        <div class="title text-center my-4">
+                            <h4>Chirs David</h4>
+                        </div>
+                        <div class="card-text mb-2 text-justify">
+                            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni unde perspiciatis odio quam nam veritatis sint quis culpa laboriosam eaque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, fuga.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn my-5">
+            <button><a href="./directors.html">Meet Directors</a></button>
+        </div>
+    </section>
+    <!-- Directors End -->
+
+
+    <!-- testimonial -->
+    <section id="testimonial">
+        <div class="container">
+            <div class="text-center py-5">
+                <h2 class="font-weight-bold">Testi<span class="text-info">monial</span></h2>
+            </div>
+            <div class="owl-carousel owl-theme owl-loaded text-center">
+                <div class="owl-stage-outer">
+
+                    <div class="owl-stage">
+                        <div class=" owl-item">
+                            <div class=" card">
+                                <div class="card-body bg-color">
+                                    <img src="./imgs/testimonial_img.jpeg" class="rounded-circle" alt="">
+                                    <div class="title text-center my-4">
+                                        <h4>Zohaib Ashraf</h4>
+                                    </div>
+                                    <div class="sub-title text-center pb-3">Web Designer</div>
+                                    <div class="card-text mb-2">
+                                        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, fuga.</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class=" owl-item">
+                            <div class=" card">
+                                <div class="card-body bg-color">
+                                    <img src="./imgs/testimonial_img.jpeg" class="rounded-circle" alt="">
+                                    <div class="title text-center my-4">
+                                        <h4>Zohaib Ashraf</h4>
+                                    </div>
+                                    <div class="sub-title text-center pb-3">Gym Manager</div>
+                                    <div class="card-text mb-2">
+                                        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, fuga.</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class=" owl-item">
+                            <div class=" card">
+                                <div class="card-body bg-color">
+                                    <img src="./imgs/testimonial_img.jpeg" class="rounded-circle" alt="">
+                                    <div class="title text-center my-4">
+                                        <h4>Zohaib Ashraf</h4>
+                                    </div>
+                                    <div class="sub-title text-center pb-3">Gym Trainer</div>
+                                    <div class="card-text mb-2">
+                                        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, fuga.</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" owl-item">
+                            <div class=" card">
+                                <div class="card-body bg-color">
+                                    <img src="./imgs/testimonial_img.jpeg" class="rounded-circle" alt="">
+                                    <div class="title text-center my-4">
+                                        <h4>Zohaib Ashraf</h4>
+                                    </div>
+                                    <div class="sub-title text-center pb-3">Gym Owner</div>
+                                    <div class="card-text mb-2">
+                                        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, fuga.</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" owl-item">
+                            <div class=" card">
+                                <div class="card-body bg-color">
+                                    <img src="./imgs/testimonial_img.jpeg" class="rounded-circle" alt="">
+                                    <div class="title text-center my-4">
+                                        <h4>Zohaib Ashraf</h4>
+                                    </div>
+                                    <div class="sub-title text-center pb-3">Marketing Manager</div>
+                                    <div class="card-text mb-2">
+                                        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, fuga.</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="owl-nav">
+                    <div class="owl-prev">prev</div>
+                    <div class="owl-next">next</div>
+                </div> -->
+                <!-- <div class="owl-dots">
+                    <div class="owl-dot active"><span></span></div>
+                    <div class="owl-dot"><span></span></div>
+                    <div class="owl-dot"><span></span></div>
+                </div> -->
+            </div>
+        </div>
+    </section>
     <!-- Contact us -->
-    <section id="contact" class="bg-colors pb-3">
+    <section id="contact" class="pb-3">
         <div class="container ">
-            <h2 class="text-center pt-5 font-weight-bold ">Contact us</h2>
+            <h2 class="text-center pt-5 font-weight-bold text-info">Contact <span class="text-dark">Us</span></h2>
             <div class="pb-5">
                 <div class="container ">
                     <form class="form ">
@@ -289,7 +457,7 @@
                             <label for="email ">Email</label>
                             <input type="text " class="form-control " id="email " placeholder="Enter your E-mail ">
                         </div>
-                        <button class="btn btn-dark float-right mb-4 " type="submit ">Submit</button>
+                        <button class="btn btn-info float-right mb-4 " type="submit ">Submit</button>
                     </form>
 
                 </div>
@@ -308,7 +476,7 @@
             width="100% " height="280 " style="border:0;" allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
 
     </section>
-    <footer class="bg-dark">
+    <footer class="bg-info">
         <div class="row container">
             <div class="col text-center d-flex flex-column mt-3">
                 <h4 class="text-white mt-xl-4">Useful links</h4>
@@ -351,6 +519,7 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js " integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T " crossorigin="anonymous ">
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
         $('body').scrollspy({
             target: '#main-nav'
@@ -384,6 +553,30 @@
             wrap: true
         })
     </script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 20,
+            responsiveClass: true,
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1000: {
+                    items: 3,
+                    nav: true,
+                    loop: false
+                }
+            }
+        })
+    </script>
+    <script src="/login/signup.js"></script>
 </body>
 
 </html>

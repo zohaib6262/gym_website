@@ -5,34 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <title>Fitness Center</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="main-nav">
-        <div class="container">
+    <nav class="navbar navbar-expand-md navbar-dark bg-info fixed-top" id="main-nav">
+        <div class="container-fluid">
             <a href="#" class="navbar-brand ">
                 <span class="font-italic "> Zaibi</span>
             </a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
             <div id="navbarNav" class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link ml-5">Home</a>
+                        <a href="./index.html" class="nav-link ml-3">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link ml-5">About us</a>
+                        <a href="./index.html" class="nav-link ml-3">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#services" class="nav-link ml-5">Services</a>
+                        <a href="./index.html" class="nav-link ml-3">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact" class="nav-link mx-5">Contact us</a>
+                        <a href="./index.html" class="nav-link ml-3">Directors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link mx-3">Contact us</a>
                     </li>
                     <li>
                         <!-- LOGIN MODAL TRIGGER -->
@@ -43,102 +47,87 @@
             </div>
         </div>
     </nav>
-    <div class="modal" id="myLoginForm">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <ul class="nav nav-pills mb-6 mx-auto" id="pills-tab" role="tablist">
-
-                        <li class="nav-item">
-                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Login</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Sign up</a>
-                        </li>
-
-
-                    </ul>
-
-
-                    <button class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                            <form class="form-modal">
-                                <div>
-                                    <label for="username">Username</label>
-                                    <input type="text" class="form-control" id="username" placeholder="Username" required>
-                                </div>
-                                <div>
-                                    <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Email" required>
-                                </div>
-                                <div class="modal-footer">
-                                    <button class="btn btn-secondary" data-dismiss="modal">Login</button>
-                                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                            <form class="form-modal">
-                                <div>
-                                    <label for="username">Username</label>
-                                    <input type="text" class="form-control" id="username" placeholder="Username" required>
-                                </div>
-                                <div>
-                                    <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Email" required>
-                                </div>
-                                <div>
-                                    <label for="password">Password</label>
-                                    <input type="password" class="form-control" id="password" required>
-                                </div>
-                                <div class="modal-footer">
-                                    <button class="btn btn-secondary" data-dismiss="modal">Sign up</button>
-                                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
-                            </form>
-
-                        </div>
+    <div class="modal-body my-5">
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <form class="form-modal my-5">
+                    <div>
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control mb-3 usernameLogin" id="username" placeholder="Username"
+                            required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control mb-3 emailLogin" id="email" placeholder="Email"
+                            required>
+                    </div>
+                    <div class="float-right mt-3">
+                        <button class="btn btn-primary btnLogin" data-dismiss="modal">Login</button>
+                        <button class="btn btn-secondary mr-2 btnCloseLogin" data-dismiss="modal">Close</button>
 
                     </div>
-                </div>
-
-
+                </form>
             </div>
+
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <form class="form-modal">
+                    <div>
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control mb-3 usernameSignup" id="username" placeholder="Username"
+                            required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control mb-3 emailSignup" id="email" placeholder="Email"
+                            required>
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control mb-3 passwordSignup" id="password"
+                            placeholder="XXXXXXXX" required>
+                    </div>
+                    <div class="float-right mt-3">
+                        <button class="btn btn-primary btnSignup" data-dismiss="modal">Sign Up</button>
+                        <button class="btn btn-secondary mr-2 btnCloseSignup" data-dismiss="modal">Close</button>
+
+                    </div>
+                </form>
+            </div>
+
         </div>
     </div>
+    <section class="container pb-5">
+        <h2 class="mt-5 pt-xl-5 text-center text-bold"><span class="text-info">Chest</span> Exercise</h2>
+        <img src="./imgs/GYM-7.jpeg" alt="" class="my-xl-5 chest">
+        <div>
+            <h3 class="text-bold text-dark pt-5 pb-5">BEN<span class="text-info">EFITS:-</span></h3>
+            <P class="mb-4">The chest press is one of the best chest exercises for building upper body strength. </p>
+            <P class="mb-4">
+                Other effective exercises include pec deck, cable crossover, and dips. The chest press targets your
+                pectorals, deltoids, and triceps, building muscle tissue and strength. It also works your serratus
+                anterior and biceps.
+            </P>
+            <p class="mb-4">
+                This upper body strength and power help with daily activities such as pushing strollers, shopping carts,
+                and heavy doors. It’s also beneficial for sports such as swimming, tennis, and baseball.
+            </p>
+            <p class="mb-4">
+                Other benefits of strength training include enhanced fitness level, stronger bones, and better mental
+                health.
+            </p>
+            <p class="mb-4">
+                You’ll gain muscle and lose fat, helping to burn more calories even while at rest. These benefits may
+                help you to look and feel better, which can increase your confidence and well-being.</P>
+            </p>
+        </div>
 
-    <div class="bg-colors">
-        <section class="container pb-5">
-            <h2 class="mt-5 pt-xl-5 text-center text-bold">Chest Exercise</h2>
-            <img src="./imgs/GYM-7.jpeg" alt="" class="my-xl-5 chest">
-            <div>
-                <h3 class="text-bold text-dark mb-5 pt-5">BENEFITS:-</h3>
-                <P class="mb-4">The chest press is one of the best chest exercises for building upper body strength. </p>
-                <P class="mb-4">
-                    Other effective exercises include pec deck, cable crossover, and dips. The chest press targets your pectorals, deltoids, and triceps, building muscle tissue and strength. It also works your serratus anterior and biceps.
-                </P>
-                <p class="mb-4">
-                    This upper body strength and power help with daily activities such as pushing strollers, shopping carts, and heavy doors. It’s also beneficial for sports such as swimming, tennis, and baseball.
-                </p>
-                <p class="mb-4"></p>
-                Other benefits of strength training include enhanced fitness level, stronger bones, and better mental health.
-                </p>
-                <p class="mb-4"></p>
-                You’ll gain muscle and lose fat, helping to burn more calories even while at rest. These benefits may help you to look and feel better, which can increase your confidence and well-being.</P>
+    </section>
 
-            </div>
-
-        </section>
-    </div>
-    <footer class="bg-dark">
+    <footer class="bg-info">
         <div class="row container">
-            <div class="col text-center d-flex flex-column mt-3">
-                <h4 class="text-white mt-xl-4">Useful links</h4>
-                <ul class="list-unstyled d-flex flex-column align-items-center mt-3">
+            <div class="col text-center d-flex flex-column mt-2">
+                <h4 class="text-white mt-xl-3">Useful links</h4>
+                <ul class="list-unstyled d-flex flex-column align-items-center mt-2">
                     <li class="nav-item">
                         <a href="./privacy.html" class="nav-link text-white" target="_blank">Privacy and Policy</a>
                     </li>
@@ -150,8 +139,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="col mt-3">
-                <div class="d-flex flex-column text-center align-items-center mt-xl-4">
+            <div class="col mt-2">
+                <div class="d-flex flex-column text-center align-items-center mt-xl-3">
                     <h4 class="text-white">Media Links</h4>
                     <div class="mt-3 d-flex justify-content-center flex-row">
                         <a href="#" class="my-4 mx-4">
@@ -171,19 +160,22 @@
             <a href="#" class="text-light text-center">&copy;2022 Zaibi Gym </a>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous ">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous ">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js " integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T " crossorigin="anonymous ">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous ">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js "
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous ">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js "
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T " crossorigin="anonymous ">
+        </script>
     <script>
         $('body').scrollspy({
             target: '#main-nav'
         });
 
         // add smpth scrolling 
-        $('#main-nav a').on('click', function(e) {
+        $('#main-nav a').on('click', function (e) {
             // check for a hash value
 
             if (this.hash !== '') {
@@ -196,7 +188,7 @@
                 // animate smoth scroll
                 $('html, body').animate({
                     scrollTop: $(hash).offset().top
-                }, 900, function() {
+                }, 900, function () {
                     // Add hash to URL after scroll
 
                     window.location.hash = hash;
@@ -210,6 +202,8 @@
             wrap: true
         })
     </script>
+    <script src="/login/signup.js"></script>
+
 </body>
 
 </html>

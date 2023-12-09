@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="main-nav">
-        <div class="container">
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary" id="main-nav">
+        <div class="container-fluid">
             <a href="#" class="navbar-brand ">
                 <span class="font-italic "> Zaibi</span>
             </a>
@@ -23,98 +23,81 @@
             <div id="navbarNav" class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link ml-5">Home</a>
+                        <a href="./index.html" class="nav-link ml-3">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link ml-5">About us</a>
+                        <a href="./index.html" class="nav-link ml-3">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#services" class="nav-link ml-5">Services</a>
+                        <a href="./index.html" class="nav-link ml-3">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact" class="nav-link mx-5">Contact us</a>
+                        <a href="./index.html" class="nav-link ml-3">Directors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link mx-3">Contact us</a>
                     </li>
                     <li>
                         <!-- LOGIN MODAL TRIGGER -->
-                        <a class="nav-link pointer" data-toggle="modal" data-target="#myLoginForm">Login/Sign in </a>
+                        <a class="nav-link pointer" data-toggle="modal" data-target="#myLoginForm">Login/Sign Up </a>
 
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="modal" id="myLoginForm">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <ul class="nav nav-pills mb-6 mx-auto" id="pills-tab" role="tablist">
-
-                        <li class="nav-item">
-                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Login</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Sign up</a>
-                        </li>
-
-
-                    </ul>
-
-
-                    <button class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                            <form class="form-modal">
-                                <div>
-                                    <label for="username">Username</label>
-                                    <input type="text" class="form-control" id="username" placeholder="Username" required>
-                                </div>
-                                <div>
-                                    <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Email" required>
-                                </div>
-                                <div class="modal-footer">
-                                    <button class="btn btn-secondary" data-dismiss="modal">Login</button>
-                                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                            <form class="form-modal">
-                                <div>
-                                    <label for="username">Username</label>
-                                    <input type="text" class="form-control" id="username" placeholder="Username" required>
-                                </div>
-                                <div>
-                                    <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Email" required>
-                                </div>
-                                <div>
-                                    <label for="password">Password</label>
-                                    <input type="password" class="form-control" id="password" required>
-                                </div>
-                                <div class="modal-footer">
-                                    <button class="btn btn-secondary" data-dismiss="modal">Sign up</button>
-                                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
-                            </form>
-
-                        </div>
+    <div class="modal-body">
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <form class="form-modal">
+                    <div>
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control mb-3 usernameLogin" id="username" placeholder="Username" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control mb-3 emailLogin" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="float-right mt-3">
+                        <button class="btn btn-primary btnLogin" data-dismiss="modal">Login</button>
+                        <button class="btn btn-secondary mr-2 btnCloseLogin" data-dismiss="modal">Close</button>
 
                     </div>
-                </div>
-
-
+                </form>
             </div>
+
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <form class="form-modal">
+                    <div>
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control mb-3 usernameSignup" id="username" placeholder="Username" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control mb-3 emailSignup" id="email" placeholder="Email" required>
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control mb-3 passwordSignup" id="password" placeholder="XXXXXXXX" required>
+                    </div>
+                    <div class="float-right mt-3">
+                        <button class="btn btn-primary btnSignup" data-dismiss="modal">Sign Up</button>
+                        <button class="btn btn-secondary mr-2 btnCloseSignup" data-dismiss="modal">Close</button>
+
+                    </div>
+                </form>
+            </div>
+
         </div>
     </div>
 
-    <section class="container">
+    <section class="container my-5">
+        <div class="mx-auto text-center my-5 text-bold font-italic">
+            <h3>FA<span class="text-primary">Q's</span></h3>
+        </div>
         <div id="accordion">
-            <div class="card mt-5 ">
-                <div class="card-header mt-5 pt-5">
+            <div class="card">
+                <div class="card-header">
                     <h5>
                         <a href="#collapse1" data-parent="#accordion" data-toggle="collapse">
                             Where is the Gym?
@@ -122,7 +105,7 @@
                     </h5>
                 </div>
 
-                <div id="collapse1" class="collapse show">
+                <div id="collapse1" class="collapse">
                     <div class="card-body">
                         This gym is near by Pir Mehr Ali Shah Arid Agricluture Rawalpindi.This Gym is on the top floor of the Noor forces Academy. If you can't find our location by this address then please visit our offical website so you can easily find out our location whose
                         location given on offical website.
@@ -130,7 +113,7 @@
                 </div>
             </div>
 
-            <div class="card ">
+            <div class="card">
                 <div class="card-header">
                     <h5>
                         <a href="#collapse2" data-parent="#accordion" data-toggle="collapse">
@@ -162,7 +145,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card ">
+            <div class="card">
                 <div class="card-header">
                     <h5>
                         <a href="#collapse4" data-parent="#accordion" data-toggle="collapse">
@@ -171,7 +154,7 @@
                     </h5>
                 </div>
 
-                <div id="collapse4" class="collapse  ">
+                <div id="collapse4" class="collapse">
                     <div class="card-body">
                         Aerobic exercise, which speeds up your heart rate and breathing, is important for many body functions. It gives your heart and lungs a workout and increases endurance.
                     </div>
@@ -217,7 +200,7 @@
             width="100% " height="240 " style="border:0;" allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
 
     </section>
-    <footer class="bg-dark">
+    <footer class="bg-primary">
         <div class="row container">
             <div class="col text-center d-flex flex-column mt-3">
                 <h4 class="text-white mt-xl-4">Useful links</h4>
@@ -293,6 +276,8 @@
             wrap: true
         })
     </script>
+    <script src="/login/signup.js"></script>
+
 </body>
 
 </html>

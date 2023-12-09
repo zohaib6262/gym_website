@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="main-nav">
-        <div class="container">
+    <nav class="navbar navbar-expand-md navbar-dark bg-info" id="main-nav">
+        <div class="container-fluid">
             <a href="#" class="navbar-brand ">
                 <span class="font-italic "> Zaibi</span>
             </a>
@@ -23,101 +23,81 @@
             <div id="navbarNav" class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link ml-5">Home</a>
+                        <a href="./index.html" class="nav-link ml-3">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link ml-5">About us</a>
+                        <a href="./index.html" class="nav-link ml-3">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#services" class="nav-link ml-5">Services</a>
+                        <a href="./index.html" class="nav-link ml-3">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact" class="nav-link mx-5">Contact us</a>
+                        <a href="./index.html" class="nav-link ml-3">Directors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link mx-3">Contact us</a>
                     </li>
                     <li>
                         <!-- LOGIN MODAL TRIGGER -->
-                        <a class="nav-link pointer" data-toggle="modal" data-target="#myLoginForm">Login/Sign in </a>
+                        <a class="nav-link pointer" data-toggle="modal" data-target="#myLoginForm">Login/Sign Up </a>
 
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="modal" id="myLoginForm">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <ul class="nav nav-pills mb-6 mx-auto" id="pills-tab" role="tablist">
-
-                        <li class="nav-item">
-                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Login</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Sign up</a>
-                        </li>
-
-
-                    </ul>
-
-
-                    <button class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                            <form class="form-modal">
-                                <div>
-                                    <label for="username">Username</label>
-                                    <input type="text" class="form-control" id="username" placeholder="Username" required>
-                                </div>
-                                <div>
-                                    <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Email" required>
-                                </div>
-                                <div class="modal-footer">
-                                    <button class="btn btn-secondary" data-dismiss="modal">Login</button>
-                                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                            <form class="form-modal">
-                                <div>
-                                    <label for="username">Username</label>
-                                    <input type="text" class="form-control" id="username" placeholder="Username" required>
-                                </div>
-                                <div>
-                                    <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Email" required>
-                                </div>
-                                <div>
-                                    <label for="password">Password</label>
-                                    <input type="password" class="form-control" id="password" required>
-                                </div>
-                                <div class="modal-footer">
-                                    <button class="btn btn-secondary" data-dismiss="modal">Sign up</button>
-                                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
-                            </form>
-
-                        </div>
+    <div class="modal-body">
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <form class="form-modal">
+                    <div>
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control mb-3 usernameLogin" id="username" placeholder="Username" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control mb-3 emailLogin" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="float-right mt-3">
+                        <button class="btn btn-primary btnLogin" data-dismiss="modal">Login</button>
+                        <button class="btn btn-secondary mr-2 btnCloseLogin" data-dismiss="modal">Close</button>
 
                     </div>
-                </div>
-
-
+                </form>
             </div>
+
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <form class="form-modal">
+                    <div>
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control mb-3 usernameSignup" id="username" placeholder="Username" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control mb-3 emailSignup" id="email" placeholder="Email" required>
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control mb-3 passwordSignup" id="password" placeholder="XXXXXXXX" required>
+                    </div>
+                    <div class="float-right mt-3">
+                        <button class="btn btn-primary btnSignup" data-dismiss="modal">Sign Up</button>
+                        <button class="btn btn-secondary mr-2 btnCloseSignup" data-dismiss="modal">Close</button>
+
+                    </div>
+                </form>
+            </div>
+
         </div>
     </div>
 
     <!-- section about privacy and Policy -->
     <section class="container">
         <div class="mt-5">
-            <h2 class="text-center py-5">Privacy and Policy</h2>
+            <h2 class="text-center py-5">Privacy and <span class="text-info">Policy</span></h2>
         </div>
         <div class="pb-3">
-            <p>Goldstone Fitness Ltd will never knowingly pass on details transmitted through this website, by phone, email, post, fax or in person to unauthorised third parties. In addition to contact you may make with Goldstone Fitness Ltd., we would like
+            <p class="text-secondary">Goldstone Fitness Ltd will never knowingly pass on details transmitted through this website, by phone, email, post, fax or in person to unauthorised third parties. In addition to contact you may make with Goldstone Fitness Ltd., we would like
                 you to note that we also record visitor activity on our website in the form of anonymous data collection which helps us to improve our website and identify potential problems. Under normal circumstances, it is impossible to track an IP
                 address and other information collected to an individual or organisation unless criminal activity occurs on our website. In such a case, we must pass on details to third legal parties, policing organisations in Ireland or worldwide, or
                 to compile our own legal claims. Within our privacy policy, we pledge to act within the Data Protection Acts (1988 onwards) under Irish law. Any breaches reported to us will be investigated appropriately and if necessary, we will contact
@@ -127,21 +107,21 @@
         </div>
         <div class="pb-4">
             <h2 class="pb-4 text-bold text-black">When do we collect information?</h2>
-            <p>We will obtain personal information from you when you complete an online Membership Agreement, we may also collect non-identifiable information about how you browse our website, using traffic tracking software, we may also collect your details
+            <p class="text-secondary">We will obtain personal information from you when you complete an online Membership Agreement, we may also collect non-identifiable information about how you browse our website, using traffic tracking software, we may also collect your details
                 by emails sent to Goldstone Gym or email newsletter / sign up information forms or club viewing cards during club tours/visits.</p>
         </div>
         <div class="pb-4">
             <h2 class="pb-4 text-bold text-black">What information do we collect?</h2>
-            <p>The types of information we collect includes name, date of birth, e-mail address, postal address, telephone number and your credit card details. Note that we do not store your credit card details on our web servers - this is securely stored
+            <p class="text-secondary">The types of information we collect includes name, date of birth, e-mail address, postal address, telephone number and your credit card details. Note that we do not store your credit card details on our web servers - this is securely stored
                 with a third party, bank approved firm, whom we have contracted to collect payments in a passive manner.</p>
         </div>
         <div class="pb-4">
             <h2 class="pb-4 text-bold text-black">How do we use this information?</h2>
-            <p>We will use your personal information to provide you with the services, products or information that you have requested and for administration purposes. We may need to share your information with our service providers, associated organisations
+            <p class="text-secondary"> We will use your personal information to provide you with the services, products or information that you have requested and for administration purposes. We may need to share your information with our service providers, associated organisations
                 and agents for these purposes.</p>
         </div>
     </section>
-    <footer class="bg-dark">
+    <footer class="bg-info">
         <div class="row container">
             <div class="col text-center d-flex flex-column mt-3">
                 <h4 class="text-white mt-xl-4">Some other links</h4>
@@ -220,6 +200,7 @@
             wrap: true
         })
     </script>
+    <script src="/login/signup.js"></script>
 </body>
 
 </html>

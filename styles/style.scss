@@ -18,6 +18,148 @@ button:hover {
 }
 
 .form-modal {
-    width: 55%;
+    width: 65%;
     margin: auto;
+}
+
+#home img {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.86));
+    width: 100%;
+}
+
+.rounded-circle {
+    border: 3px solid white;
+}
+
+#testimonial {
+    text-align: center;
+    img {
+        width: 80%;
+        margin: auto;
+    }
+    .card {
+        border-radius: 2rem;
+    }
+    .card:hover {
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.861);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        .bg-color {
+            background-color: rgba(32, 48, 59, 0.994);
+        }
+    }
+}
+
+#directors {
+    background-color: aqua;
+    .card {
+        background-color: rgba(35, 26, 26, 0.735);
+        color: white;
+        border-radius: 2rem;
+    }
+    .btn {
+        width: 100%;
+        margin: auto;
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        button {
+            border: 5px solid none;
+            border-style: none;
+            border-radius: 8px;
+            background-color: rgba(250, 235, 215, 0.848);
+            padding: 1rem;
+        }
+    }
+    img {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.navbar {
+    background-color: black;
+}
+
+.footer {
+    background-color: black;
+}
+
+#joe {
+    text-align: center;
+    img {
+        width: 15%;
+        margin: auto;
+    }
+    .card-text {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+#mark {
+    text-align: center;
+    img {
+        width: 15%;
+        margin: auto;
+    }
+    .card-text {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+#chris_david {
+    text-align: center;
+    img {
+        width: 15%;
+        margin: auto;
+    }
+    .card-text {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+#david_topely {
+    text-align: center;
+    img {
+        width: 15%;
+        margin: auto;
+    }
+    .card-text {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+#jason {
+    text-align: center;
+    img {
+        width: 15%;
+        margin: auto;
+    }
+    .card-text {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+#chris_williams {
+    text-align: center;
+    img {
+        width: 15%;
+        margin: auto;
+    }
+    .card-text {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
 }
